@@ -151,8 +151,9 @@
   }
   .portrait-frame img {
     width: 100%;
-    aspect-ratio: 4/5;
-    object-fit: cover;
+    height: auto;
+    display: block;
+    object-fit: contain;
     filter: grayscale(0.15) contrast(1.02);
     border: 1px solid var(--ink);
   }
