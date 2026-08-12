@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahmed Ebeid — Cardiac Surgery Research</title>
+<meta name="description" content="Ahmed Ebeid, medical intern at Menoufia University, Egypt, researching cardiac surgery and cardiovascular meta-analysis.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ahmed Ebeid",
+  "alternateName": "Mohamed Ahmed Ebeid",
+  "url": "https://yoursite.com",
+  "image": "https://yoursite.com/ahmed-ebeid.jpg",
+  "jobTitle": "Medical Intern",
+  "affiliation": {
+    "@type": "Organization",
+    "name": "Faculty of Medicine, Menoufia University",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "Egypt"
+    }
+  },
+  "email": "mailto:ahmedebeidmd@outlook.com",
+  "knowsAbout": ["Cardiac Surgery", "Cardiovascular Meta-Analysis", "TAVR", "SAVR", "Systematic Review Methodology"],
+  "sameAs": [
+    "https://orcid.org/0009-0009-6288-9152",
+    "https://www.linkedin.com/in/ahmedebeidmd",
+    "https://scholar.google.com/citations?user=tsM7AH4AAAAJ&hl=en",
+    "https://www.researchgate.net/profile/Ahmed-Ebeid-7"
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --ink: #101820;
+    --paper: #EDE7DA;
+    --paper-deep: #E2DACB;
+    --navy: #16232E;
+    --crimson: #A3273A;
+    --line: rgba(16, 24, 32, 0.16);
+    --muted: #5B6B72;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+  }
+
+  .wrap {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  /* Masthead */
+  .masthead {
+    border-bottom: 3px double var(--ink);
+    padding: 28px 0 14px;
+  }
+  .masthead .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .masthead-eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .masthead-date {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+  }
+
+  /* Hero */
+  .hero {
+    padding: 56px 0 40px;
+    position: relative;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 0.85fr;
+    gap: 48px;
+    align-items: center;
+  }
+  .kicker {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--crimson);
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .kicker::before {
+    content: '';
+    width: 28px;
+    height: 1px;
+    background: var(--crimson);
+    display: inline-block;
+  }
+  h1 {
+    font-family: 'Source Serif 4', serif;
+    font-weight: 600;
+    font-size: clamp(42px, 6vw, 68px);
+    line-height: 1.02;
+    letter-spacing: -0.01em;
+    margin-bottom: 20px;
+  }
+  .role {
+    font-family: 'Source Serif 4', serif;
+    font-style: italic;
+    font-size: 20px;
+    color: var(--muted);
+    margin-bottom: 24px;
+  }
+  .lede {
+    font-size: 16px;
+    max-width: 46ch;
+    color: var(--ink);
+  }
+
+  .portrait-frame {
+    position: relative;
+  }
+  .portrait-frame img {
+    width: 100%;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    filter: grayscale(0.15) contrast(1.02);
+    border: 1px solid var(--ink);
+  }
+  .portrait-cap {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* ECG signature divider */
+  .ecg {
+    width: 100%;
+    height: 46px;
+    margin: 8px 0 0;
+    overflow: hidden;
+  }
+  .ecg svg { width: 100%; height: 100%; display: block; }
+  .ecg path {
+    fill: none;
+    stroke: var(--crimson);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 900;
+    stroke-dashoffset: 900;
+    animation: draw 2.6s ease-out forwards;
+  }
+  @keyframes draw {
+    to { stroke-dashoffset: 0; }
+  }
+
+  /* Sections */
+  section {
+    padding: 44px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  section:last-of-type { border-bottom: none; }
+
+  .section-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    font-size: 16px;
+    max-width: 62ch;
+  }
+  .about-text + .about-text { margin-top: 14px; }
+
+  /* Focus areas as a clinical readout list */
+  .readout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--line);
+    margin-top: 4px;
+  }
+  .readout-item {
+    padding: 18px 20px 18px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .readout-item:nth-child(odd) {
+    border-right: 1px solid var(--line);
+    padding-right: 24px;
+  }
+  .readout-item:nth-child(even) { padding-left: 24px; }
+  .readout-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--crimson);
+    margin-bottom: 6px;
+  }
+  .readout-value {
+    font-family: 'Source Serif 4', serif;
+    font-size: 18px;
+  }
+
+  /* Links */
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 4px;
+  }
+  .link-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 16px 0;
+    border-top: 1px solid var(--line);
+    text-decoration: none;
+    color: var(--ink);
+    transition: padding-left 0.2s ease, color 0.2s ease;
+  }
+  .links .link-row:last-child { border-bottom: 1px solid var(--line); }
+  .link-row:hover, .link-row:focus-visible {
+    padding-left: 10px;
+    color: var(--crimson);
+    outline: none;
+  }
+  .link-row:focus-visible { text-decoration: underline; }
+  .link-name {
+    font-family: 'Source Serif 4', serif;
+    font-size: 19px;
+  }
+  .link-url {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  footer {
+    padding: 32px 0 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  footer .fine {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  @media (max-width: 720px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .portrait-frame { order: -1; max-width: 260px; }
+    .readout { grid-template-columns: 1fr; }
+    .readout-item:nth-child(odd) { border-right: none; padding-right: 0; }
+    .readout-item:nth-child(even) { padding-left: 0; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <span class="masthead-eyebrow">Clinical Research Profile</span>
+    <span class="masthead-date">Menoufia, Egypt</span>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="hero" style="border-bottom:none; padding-bottom:0;">
+    <div class="hero-grid">
+      <div>
+        <div class="kicker">Medical Intern &amp; Researcher</div>
+        <h1>Ahmed<br>Ebeid</h1>
+        <p class="role">Cardiac surgery, in pursuit.</p>
+        <p class="lede">Medical intern at the Faculty of Medicine, Menoufia University, working toward a research career in cardiac surgery — with a current focus on cardiovascular meta-analysis and structural heart interventions.</p>
+      </div>
+      <div class="portrait-frame">
+        <img src="ahmed-ebeid.jpg" alt="Portrait of Ahmed Ebeid" width="600" height="750">
+        <div class="portrait-cap">
+          <span>Menoufia University</span>
+          <span>2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ecg" aria-hidden="true">
+    <svg viewBox="0 0 900 46" preserveAspectRatio="none">
+      <path d="M0,23 L120,23 L140,23 L150,8 L160,40 L170,4 L180,23 L200,23 L260,23 L280,23 L300,8 L310,40 L320,4 L330,23 L350,23 L420,23 L440,23 L460,8 L470,40 L480,4 L490,23 L510,23 L580,23 L600,23 L620,8 L630,40 L640,4 L650,23 L670,23 L740,23 L760,23 L780,8 L790,40 L800,4 L810,23 L900,23"/>
+    </svg>
+  </div>
+
+  <section>
+    <div class="section-label">About</div>
+    <p class="about-text">Ahmed is a medical intern with active research contributions in interventional cardiology, focused on comparative outcomes between TAVR and SAVR across major randomized controlled trials. His work spans systematic review methodology, meta-analytic statistics in R, and manuscript preparation for peer-reviewed cardiology journals.</p>
+    <p class="about-text">He works within a collaborative, multi-author research group on cardiovascular evidence synthesis, with particular interest in reconstructed patient-level survival modeling and structural heart device performance.</p>
+  </section>
+
+  <section>
+    <div class="section-label">Research Focus</div>
+    <div class="readout">
+      <div class="readout-item">
+        <div class="readout-label">Primary Interest</div>
+        <div class="readout-value">Cardiac Surgery</div>
+      </div>
+      <div class="readout-item">
+        <div class="readout-label">Methodology</div>
+        <div class="readout-value">Meta-Analysis &amp; Systematic Review</div>
+      </div>
+      <div class="readout-item">
+        <div class="readout-label">Comparative Focus</div>
+        <div class="readout-value">TAVR vs. SAVR</div>
+      </div>
+      <div class="readout-item">
+        <div class="readout-label">Affiliation</div>
+        <div class="readout-value">Menoufia University</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label">Find Ahmed Elsewhere</div>
+    <div class="links">
+      <a class="link-row" href="https://www.linkedin.com/in/ahmedebeidmd" target="_blank" rel="noopener">
+        <span class="link-name">LinkedIn</span>
+        <span class="link-url">linkedin.com/in/ahmedebeidmd</span>
+      </a>
+      <a class="link-row" href="https://orcid.org/0009-0009-6288-9152" target="_blank" rel="noopener">
+        <span class="link-name">ORCID</span>
+        <span class="link-url">0009-0009-6288-9152</span>
+      </a>
+      <a class="link-row" href="https://scholar.google.com/citations?user=tsM7AH4AAAAJ&hl=en" target="_blank" rel="noopener">
+        <span class="link-name">Google Scholar</span>
+        <span class="link-url">scholar.google.com/citations</span>
+      </a>
+      <a class="link-row" href="https://www.researchgate.net/profile/Ahmed-Ebeid-7" target="_blank" rel="noopener">
+        <span class="link-name">ResearchGate</span>
+        <span class="link-url">researchgate.net/profile/Ahmed-Ebeid-7</span>
+      </a>
+      <a class="link-row" href="mailto:ahmedebeidmd@outlook.com">
+        <span class="link-name">Email</span>
+        <span class="link-url">ahmedebeidmd@outlook.com</span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <span class="fine">© 2026 Ahmed Ebeid</span>
+    <span class="fine">Faculty of Medicine, Menoufia University</span>
+  </footer>
+</div>
+
+</body>
+</html>
